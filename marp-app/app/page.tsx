@@ -85,7 +85,7 @@ export default function Home() {
     <div className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-          Marp変換アプリ
+          MD→Marp変換アプリ
         </h1>
 
         <div className="space-y-8">

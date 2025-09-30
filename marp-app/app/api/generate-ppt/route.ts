@@ -15,11 +15,13 @@ export async function POST(request: NextRequest) {
     slides.forEach((slideContent: string) => {
       const slide = pptx.addSlide();
       const lines = slideContent.trim().split('\n');
-      
+      const FONT_NAME = 'BIZ UDPゴシック';
+
       let yPos = 0.5;
       
       lines.forEach((line: string) => {
         line = line.trim();
+        line = line.replace(/\*\*(.+?)\*\*/g, '$1');
         if (!line) return;
 
         if (line.startsWith('# ')) {
@@ -30,7 +32,8 @@ export async function POST(request: NextRequest) {
             h: 0.5,
             fontSize: 32,
             bold: true,
-            color: '363636'
+            color: '363636',
+              fontFace: FONT_NAME
           });
           yPos += 0.8;
         } else if (line.startsWith('## ')) {
@@ -41,7 +44,8 @@ export async function POST(request: NextRequest) {
             h: 0.4,
             fontSize: 24,
             bold: true,
-            color: '363636'
+               color: '363636',
+              fontFace: FONT_NAME
           });
           yPos += 0.6;
         } else if (line.startsWith('- ')) {
@@ -51,7 +55,8 @@ export async function POST(request: NextRequest) {
             w: 8.5,
             h: 0.3,
             fontSize: 18,
-            color: '363636'
+              color: '363636',
+              fontFace: FONT_NAME
           });
           yPos += 0.4;
         } else {
@@ -61,7 +66,8 @@ export async function POST(request: NextRequest) {
             w: 9,
             h: 0.3,
             fontSize: 18,
-            color: '363636'
+                  color: '363636',
+              fontFace: FONT_NAME
           });
           yPos += 0.4;
         }

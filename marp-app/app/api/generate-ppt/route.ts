@@ -22,6 +22,7 @@ export async function POST(request: NextRequest) {
       lines.forEach((line: string) => {
         line = line.trim();
         line = line.replace(/\*\*(.+?)\*\*/g, '$1');
+        line = line.replace(/```\w*/g, '');
         if (!line) return;
 
         if (line.startsWith('# ')) {

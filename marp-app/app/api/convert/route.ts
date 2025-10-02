@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     const message = await anthropic.messages.create({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 4000,
+      max_tokens: 16000,
       messages: [{
         role: 'user',
         content: `以下のテキストを、Marp形式のスライドに変換してください。

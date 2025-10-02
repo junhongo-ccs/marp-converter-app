@@ -85,14 +85,14 @@ export default function Home() {
     <div className="min-h-screen p-8 bg-gray-50">
       <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-          MD→Marp変換アプリ
+          Marp→PPT 変換アプリ
         </h1>
 
         <div className="space-y-8">
           {/* ファイル選択エリア */}
           <div className="space-y-2">
             <label className="block text-base font-medium text-gray-700">
-              テキストを読ませるファイルを選択（.txt .md　.html）
+              テキストを読ませるファイルを選択（.txt .md　.html）してください。AIがPPTにレイアウト変換したのちダウンロードできます。
             </label>
             <input
               type="file"

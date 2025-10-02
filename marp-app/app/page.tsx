@@ -92,7 +92,7 @@ export default function Home() {
           {/* ファイル選択エリア */}
           <div className="space-y-2">
             <label className="block text-base font-medium text-gray-700">
-              テキストファイルを選択（.txt または .md）
+              テキストを読ませるファイルを選択（.txt .md　.html）
             </label>
             <input
               type="file"

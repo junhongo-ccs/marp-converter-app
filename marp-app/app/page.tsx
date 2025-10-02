@@ -1,5 +1,27 @@
 'use client';
 
+// OGPとfaviconはmetadataで設定
+export const metadata = {
+  title: 'Marp Converter App',
+  description: 'Marpスライドを変換するWebアプリ',
+  openGraph: {
+    title: 'Marp Converter App',
+    description: 'AIがテキストからPPTスライドに変換するWebアプリ',
+    url: 'https://md-ppt-converter.up.railway.app/',
+    type: 'website',
+    images: [
+      {
+  url: '/images/ogp.png', // ご自身のOGP画像を public/images/ogp.png に配置してください
+        width: 1200,
+        height: 630,
+        alt: 'OGP Image',
+      },
+    ],
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 import { useState } from 'react';
 
 export default function Home() {

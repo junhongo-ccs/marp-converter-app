@@ -92,7 +92,7 @@ export default function Home() {
           {/* ファイル選択エリア */}
           <div className="space-y-2">
             <label className="block text-base font-medium text-gray-700">
-              テキストを読ませるファイルを選択（.txt .md　.html）してください。AIがPPTにレイアウト変換したのちダウンロードできます。
+              テキストを読ませるファイルを選択（.txt/.md/.htmlなど）してください。AIがPPTにレイアウト変換したのちダウンロードできます。
             </label>
             <input
               type="file"

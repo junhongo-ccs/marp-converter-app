@@ -96,7 +96,7 @@ export default function Home() {
             </label>
             <input
               type="file"
-              accept=".txt,.md"
+              accept=".txt,.md,.html"
               onChange={handleFileChange}
               className="block w-full text-sm text-gray-500
                 file:mr-4 file:py-3 file:px-6
